@@ -1,18 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Collections;
-using System.Threading;
 using MelonLoader;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Events;
-using UnityEngine.SceneManagement;
 using NET_SDK;
 using NET_SDK.Harmony;
 using NET_SDK.Reflection;
-using System.Runtime.InteropServices;
-using UnityEngine.PostProcessing;
+
 
 namespace AudicaModding
 {
