@@ -34,7 +34,7 @@ namespace AudicaModding
 
         public override void OnApplicationStart()
         {
-            Instance instance = Manager.CreateInstance("TestMod");
+            Instance instance = Manager.CreateInstance("TimingAssist");
             TimingAssist.LaunchPlay = instance.Patch(SDK.GetClass("LaunchPanel").GetMethod("Play"), typeof(TimingAssist).GetMethod("PlaySong"));
             TimingAssist.Restart = instance.Patch(SDK.GetClass("InGameUI").GetMethod("Restart"), typeof(TimingAssist).GetMethod("RestartSong"));
             TimingAssist.SongSelectItem_OnSelect = instance.Patch(SDK.GetClass("SongSelectItem").GetMethod("OnSelect"), typeof(TimingAssist).GetMethod("OnSelect"));
