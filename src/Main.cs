@@ -2,61 +2,41 @@
 using System.Collections;
 using MelonLoader;
 using UnityEngine;
-using NET_SDK;
-using NET_SDK.Harmony;
-using NET_SDK.Reflection;
-
+using Harmony;
 
 namespace AudicaModding
 {
-    public static class BuildInfo
+    public class AudicaMod : MelonMod
     {
-        public const string Name = "TimingAssist"; // Name of the Mod.  (MUST BE SET)
-        public const string Author = "octo & alternity"; // Author of the Mod.  (Set as null if none)
-        public const string Company = null; // Company that made the Mod.  (Set as null if none)
-        public const string Version = "1.0.4"; // Version of the Mod.  (MUST BE SET)
-        public const string DownloadLink = null; // Download Link for the Mod.  (Set as null if none)
-    }
-
-    public class TimingAssist : MelonMod
-    {
-        public static Patch SongSelectItem_OnSelect;
-        public static Patch LaunchPlay;
-        public static Patch Restart;
-
-        public static IL2CPP_Class SongSelectClass;
-
         private static float percent = 1.0f;
         private static string selectedSong;
         private bool sliderExists = false;
+        public static class BuildInfo
+        {
+            public const string Name = "TimingAssist"; // Name of the Mod.  (MUST BE SET)
+            public const string Author = "octo & alternity"; // Author of the Mod.  (Set as null if none)
+            public const string Company = null; // Company that made the Mod.  (Set as null if none)
+            public const string Version = "1.1.0"; // Version of the Mod.  (MUST BE SET)
+            public const string DownloadLink = null; // Download Link for the Mod.  (Set as null if none)
+        }
 
         public OptionsMenuSlider TimingAssistSlider = new OptionsMenuSlider();
 
         public override void OnApplicationStart()
         {
-            Instance instance = Manager.CreateInstance("TimingAssist");
-            TimingAssist.LaunchPlay = instance.Patch(SDK.GetClass("LaunchPanel").GetMethod("Play"), typeof(TimingAssist).GetMethod("PlaySong"));
-            TimingAssist.Restart = instance.Patch(SDK.GetClass("InGameUI").GetMethod("Restart"), typeof(TimingAssist).GetMethod("RestartSong"));
-            TimingAssist.SongSelectItem_OnSelect = instance.Patch(SDK.GetClass("SongSelectItem").GetMethod("OnSelect"), typeof(TimingAssist).GetMethod("OnSelect"));
+            HarmonyInstance instance = HarmonyInstance.Create("AudicaMod");
+            Hooks.ApplyHooks(instance);
         }
 
-        public static void OnSelect(IntPtr @this)
+        public static void OnSelect(SongSelectItem button)
         {
-            TimingAssist.SongSelectItem_OnSelect.InvokeOriginal(@this);
-            SongSelectItem button = new SongSelectItem(@this);
             string songID = button.mSongData.songID;
             selectedSong = songID;
         }
-        public static void RestartSong(IntPtr @this)
-        {
-            TimingAssist.Restart.InvokeOriginal(@this);
-            MelonCoroutines.Start(DisableParticles());
-        }
 
-        public static void PlaySong(IntPtr @this)
+        public static void PlaySong()
         {
-            TimingAssist.LaunchPlay.InvokeOriginal(@this);
-            MelonCoroutines.Start(DisableParticles());
+            MelonCoroutines.Start(ChangeTimingWindow());
         }
 
         public void UpdateSlider()
@@ -78,7 +58,7 @@ namespace AudicaModding
                 this.TimingAssistSlider.label.text = "Timing Assist " + (percent * 100).ToString("F") + "%";
             }
         }
-        static IEnumerator DisableParticles()
+        static IEnumerator ChangeTimingWindow()
         {
             if (percent < 1.0f)
             {
@@ -90,9 +70,6 @@ namespace AudicaModding
 
                 for (int i = 0; i < tempos.Length; i++)
                 {
-                    //MelonModLogger.Log("Tick: " + tempos[i].tick.ToString());
-                    //MelonModLogger.Log("Tempo: " + tempos[i].tempo.ToString());
-
                     float timingWindowMs = 200 * Mathf.Lerp(0.07f, 1.0f, percent);
 
                     float ticks = timingWindowMs / (60000 / (tempos[i].tempo * 480));
@@ -104,8 +81,8 @@ namespace AudicaModding
                         {
                             void UpdateTarget(SongCues.Cue cue)
                             {
-                                cues[j].slopAfterTicks = halfTicks;
-                                cues[j].slopBeforeTicks = halfTicks;
+                                cue.slopAfterTicks = halfTicks;
+                                cue.slopBeforeTicks = halfTicks;
                             }
                             if (cues[j].tick >= tempos[i].tick)
                             {
@@ -120,17 +97,6 @@ namespace AudicaModding
                             }
                         }
                     }
-                }
-
-                for (int i = 0; i < cues.Length; i++)
-                {
-                    if (cues[i].behavior == Target.TargetBehavior.Standard | cues[i].behavior == Target.TargetBehavior.ChainStart | cues[i].behavior == Target.TargetBehavior.Horizontal | cues[i].behavior == Target.TargetBehavior.Vertical | cues[i].behavior == Target.TargetBehavior.Hold)
-                    {
-                        //cues[i].slopAfterTicks = slopEarly;
-                        //cues[i].slopBeforeTicks = slopBefore;
-
-                    }
-                    cues[i].particleReductionScale = 0.0f;
                 }
             }
 
