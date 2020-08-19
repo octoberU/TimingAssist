@@ -22,12 +22,6 @@ namespace AudicaModding
 
         public OptionsMenuSlider TimingAssistSlider = new OptionsMenuSlider();
 
-        public override void OnApplicationStart()
-        {
-            HarmonyInstance instance = HarmonyInstance.Create("AudicaMod");
-            Hooks.ApplyHooks(instance);
-        }
-
         public static void OnSelect(SongSelectItem button)
         {
             string songID = button.mSongData.songID;

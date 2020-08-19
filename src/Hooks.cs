@@ -1,7 +1,5 @@
 using Harmony;
 using System.Reflection;
-using System;
-using MelonLoader;
 
 namespace AudicaModding
 {

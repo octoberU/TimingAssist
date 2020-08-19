@@ -32,89 +32,47 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\ScorePercentage\lib\Assembly-CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\ScorePercentage\lib\Assembly-CSharp-firstpass.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppMono.Security">
-      <HintPath>..\ScorePercentage\lib\Il2CppMono.Security.dll</HintPath>
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Il2Cppmscorlib">
-      <HintPath>..\ScorePercentage\lib\Il2Cppmscorlib.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem">
-      <HintPath>..\ScorePercentage\lib\Il2CppSystem.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem.Configuration">
-      <HintPath>..\ScorePercentage\lib\Il2CppSystem.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem.Core">
-      <HintPath>..\ScorePercentage\lib\Il2CppSystem.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem.Runtime.Serialization">
-      <HintPath>..\ScorePercentage\lib\Il2CppSystem.Runtime.Serialization.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem.Xml">
-      <HintPath>..\ScorePercentage\lib\Il2CppSystem.Xml.dll</HintPath>
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
     </Reference>
     <Reference Include="MelonLoader.ModHandler">
-      <HintPath>..\ScorePercentage\lib\MelonLoader.ModHandler.dll</HintPath>
-    </Reference>
-    <Reference Include="Oculus.VR">
-      <HintPath>..\ScorePercentage\lib\Oculus.VR.dll</HintPath>
-    </Reference>
-    <Reference Include="Sanford.Multimedia.Midi">
-      <HintPath>..\ScorePercentage\lib\Sanford.Multimedia.Midi.dll</HintPath>
-    </Reference>
-    <Reference Include="SonyNP">
-      <HintPath>..\ScorePercentage\lib\SonyNP.dll</HintPath>
-    </Reference>
-    <Reference Include="SteamVR">
-      <HintPath>..\ScorePercentage\lib\SteamVR.dll</HintPath>
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\MelonLoader.ModHandler.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="TwitchChatter">
-      <HintPath>..\ScorePercentage\lib\TwitchChatter.dll</HintPath>
-    </Reference>
     <Reference Include="UnhollowerBaseLib">
-      <HintPath>..\ScorePercentage\lib\UnhollowerBaseLib.dll</HintPath>
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnhollowerBaseLib.dll</HintPath>
     </Reference>
-    <Reference Include="UnhollowerRuntimeLib, Version=0.3.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ScorePercentage\lib\UnhollowerRuntimeLib.dll</HintPath>
+    <Reference Include="UnhollowerRuntimeLib">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnhollowerRuntimeLib.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ScorePercentage\lib\Unity.TextMeshPro.dll</HintPath>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
       <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.AIModule, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ScorePercentage\lib\UnityEngine.AIModule.dll</HintPath>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.AIModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.AnimationModule, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ScorePercentage\lib\UnityEngine.AnimationModule.dll</HintPath>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.AnimationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AssetBundleModule">
       <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.AudioModule, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ScorePercentage\lib\UnityEngine.AudioModule.dll</HintPath>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.AudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\ScorePercentage\lib\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.DirectorModule">
       <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.DirectorModule.dll</HintPath>
@@ -122,12 +80,14 @@
     <Reference Include="UnityEngine.GridModule">
       <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.GridModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Il2CppAssetBundleManager">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.Il2CppAssetBundleManager.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.ImageConversionModule">
       <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.IMGUIModule, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ScorePercentage\lib\UnityEngine.IMGUIModule.dll</HintPath>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputModule">
       <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.InputModule.dll</HintPath>
@@ -135,64 +95,53 @@
     <Reference Include="UnityEngine.JSONSerializeModule">
       <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.ParticleSystemModule, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ScorePercentage\lib\UnityEngine.ParticleSystemModule.dll</HintPath>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Physics2DModule, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ScorePercentage\lib\UnityEngine.Physics2DModule.dll</HintPath>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.Physics2DModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.PhysicsModule, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ScorePercentage\lib\UnityEngine.PhysicsModule.dll</HintPath>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SharedInternalsModule">
       <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.TerrainModule, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ScorePercentage\lib\UnityEngine.TerrainModule.dll</HintPath>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.TerrainModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.TextCoreModule, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ScorePercentage\lib\UnityEngine.TextCoreModule.dll</HintPath>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.TextCoreModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.TextRenderingModule, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ScorePercentage\lib\UnityEngine.TextRenderingModule.dll</HintPath>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TilemapModule">
       <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.TilemapModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ScorePercentage\lib\UnityEngine.UI.dll</HintPath>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule">
       <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.UIElementsModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UIModule, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ScorePercentage\lib\UnityEngine.UIModule.dll</HintPath>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.UIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityAnalyticsModule">
       <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestModule, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ScorePercentage\lib\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestTextureModule">
       <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestWWWModule, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ScorePercentage\lib\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.VehiclesModule, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ScorePercentage\lib\UnityEngine.VehiclesModule.dll</HintPath>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.VehiclesModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VFXModule">
       <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.VFXModule.dll</HintPath>
@@ -203,13 +152,13 @@
     <Reference Include="UnityEngine.VRModule">
       <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.VRModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.XRModule, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ScorePercentage\lib\UnityEngine.XRModule.dll</HintPath>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\UnityEngine.XRModule.dll</HintPath>
     </Reference>
-    <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\Valve.Newtonsoft.Json.dll</HintPath>
+    <Reference Include="ValueTupleBridge">
+      <HintPath>E:\Steam\steamapps\common\Audica\MelonLoader\Managed\ValueTupleBridge.dll</HintPath>
     </Reference>
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\Hooks.cs" />
