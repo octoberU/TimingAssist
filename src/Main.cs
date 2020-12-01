@@ -10,6 +10,16 @@ using TimingAssist;
 
 public class TimingAssistMod : MelonMod
 {
+    public override void OnApplicationStart()
+    {
+        Config.RegisterConfig();
+    }
+
+    public override void OnModSettingsApplied()
+    {
+        Config.OnModSettingsApplied();
+    }
+
     private static float percent => Config.TimingAssistAmount;
 
     [HarmonyPatch(typeof(AudioDriver), "StartPlaying", new Type[0])]
