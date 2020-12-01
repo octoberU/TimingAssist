@@ -6,7 +6,7 @@ using TimingAssist;
 
 
 [assembly: MelonGame("Harmonix Music Systems, Inc.", "Audica")]
-[assembly: MelonInfo(typeof(TimingAssistMod), "Timing Assist", "1.1.2", "octo & Alternity", "https://github.com/octoberU/TimingAssist")]
+[assembly: MelonInfo(typeof(TimingAssistMod), "Timing Assist", "1.1.3", "octo & Alternity", "https://github.com/octoberU/TimingAssist")]
 
 public class TimingAssistMod : MelonMod
 {
