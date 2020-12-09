@@ -3,13 +3,16 @@ using MelonLoader;
 using UnityEngine;
 using Harmony;
 using TimingAssist;
+using System.Reflection;
 
-
+[assembly: AssemblyVersion(TimingAssistMod.VERSION)]
+[assembly: AssemblyFileVersion(TimingAssistMod.VERSION)]
 [assembly: MelonGame("Harmonix Music Systems, Inc.", "Audica")]
-[assembly: MelonInfo(typeof(TimingAssistMod), "Timing Assist", "1.1.3", "octo & Alternity", "https://github.com/octoberU/TimingAssist")]
+[assembly: MelonInfo(typeof(TimingAssistMod), "Timing Assist", TimingAssistMod.VERSION, "octo & Alternity", "https://github.com/octoberU/TimingAssist")]
 
 public class TimingAssistMod : MelonMod
 {
+    public const string VERSION = "1.1.4";
     public override void OnApplicationStart()
     {
         Config.RegisterConfig();
